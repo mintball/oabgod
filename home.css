@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mali", sans-serif;
+}
+body
+{
+    background: #000000;
+
+}
+
+.container
+{
+    margin: 0 auto;
+
+}
+/*ion-icon*/
+/*{*/
+
+/*    top: 50px;*/
+/*    left: 50px;*/
+/*    font-size: 1em;*/
+/*    color: #d2ae56;*/
+/*    filter: blur(1px) drop-shadow(0 0 5px yellow) ;*/
+/*}*/
+
+.moon
+{
+    position: relative;
+    background: black;
+
+}
+.moon img
+{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+
+
+
+
+}
+.message
+{
+    position: fixed;
+    height: 150px;
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px;
+    /*box-shadow: 0 0 0 1px wheat;*/
+    border-radius: 10px;
+    background: #050505;
+}
+.message p
+{
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.5em;
+    word-break: break-word;
+    color: #8f855c;
+}
+
+p:after
+{
+    content: '';
+    animation: animate 50s ease;
+}
+
+@keyframes animate {
+    0%{content: 'สวัสดี';}
+    15%{content: 'เราชื่อ "โอบกอด" นะ ';}
+    20%{content: 'เราเป็นเว็บไซต์ที่สร้างขึ้นมาเพื่อโอบกอดตัวของเราเอง';}
+    35%{content: 'ในยามที่เราเหนื่อยล้า หรือหมดกำลังใจ';}
+    55%{content: 'เราชอบที่จะแหงนหน้า มองไปที่ดวงจันทร์';}
+    70%{content: 'แล้วระบายความรู้สึก หรือเล่าเหตุการณ์ ในแต่ละวันที่เราได้พบเจอมาให้ดวงจันทร์ฟัง';}
+    85%{content: 'แต่วันใหนที่เรามองไม่เห็นดวงจันทร์ เราหวังว่าพระจันทร์ที่อยู่ตรงหน้า จะยังโอบกอดตัวของเราไว้';}
+    100%{content: 'ถ้าเธอมีเรื่องไม่สบายใจ ระบายมันออกมาได้นะ';}
+
+}
+
+/*.rabuy span*/
+/*{*/
+/*    position: absolute;*/
+/*    !*background: white;*!*/
+/*    text-align: center;*/
+/*    color: #7e7a7a;*/
+/*    top: 80%;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    word-break: break-word;*/
+/*}*/
+.play
+{
+    position: fixed;
+    text-align: center;
+    height: 80px;
+    width: 250px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.name
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #7a7878;
+
+}
+.name span
+{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+input
+{
+    height: 2.5em;
+}
+
+audio
+{
+    display: none;
+}
+
+.img1
+{
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+.img2
+{
+    position: fixed;
+    bottom:0;
+    left: 0;
+}
+.logoEvo img
+{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    max-width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(10px 1px 5px rgba(6, 169, 221,0.4));
+}
+

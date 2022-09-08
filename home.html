@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oabgod</title>
+    <link rel="icon" href="moon.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+
+</head>
+<body>
+  <div class="container">
+
+
+    <div class="moon">
+        <img src="moon.png" alt="moon">
+<!--        <ion-icon name="star"></ion-icon>-->
+    </div>
+
+
+    <div class="message">
+        <p id="log"></p>
+
+
+    </div>
+
+    <div class="play">
+        <div class="name">
+            <span>เธอเก่งที่สุดแล้ว</span>
+        </div>
+
+        <div class="text">
+            <input style="display: flow"   type="text" id="textfield" >
+        </div>
+
+    </div>
+
+      <div class="logoEvo">
+          <div class="img1">
+              <img src="evo-family-badges-left-i9i7i5.png" alt="evo">
+          </div>
+          <div class="img2">
+              <img src="evo-i5i7i9-family-badges-right-rgb.png" alt="evo">
+          </div>
+
+      </div>
+
+
+
+  </div>
+  <audio controls autoplay loop >
+      <source src="bensound-november.mp3" type="audio/mp3">
+  </audio>
+
+<!--get text and show text-->
+  <script>
+      let input = document.querySelector('input');
+      let message = document.getElementById("log");
+
+      input.addEventListener('change',updateValue);
+
+      function updateValue(e){
+          message.textContent = e.target.value;
+      }
+  </script>
+<!--  clear input textfield if press Enter on keyboard  -->
+  <script>
+    document.addEventListener("keyup",function (event){
+        if(event.key == 'Enter'){
+            let inputField = document.getElementById("textfield");
+
+            inputField.value = ""
+
+        }
+    })
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>
